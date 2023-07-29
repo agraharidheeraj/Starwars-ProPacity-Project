@@ -1,0 +1,37 @@
+.navigation{
+    display: flex;
+    width: 223px;
+    padding: 0.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+.navigation ul {
+ display: flex;
+ flex-direction: column;
+ gap: 2rem;
+ justify-content: center;
+align-items: center;
+flex: 1 0 0;
+list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-header li{
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex: 1 0 0;
+}
+.right{
+ padding-left: 4rem;
+}
+
+
+   
