@@ -1,34 +1,118 @@
-/* src/components/Species.css */
 .species-container {
-    padding: 20px;
+  gap: 0.75rem;
+  width: 1200px;
+  padding-right: 3rem;
   }
   
-  .species-container h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+   h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.225rem;
+    color: white;
   }
   
   .species-list {
     list-style: none;
-    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+  height: 290px;
+  align-self: stretch;
   }
   
+  
   .species-list li {
-    border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #f9f9f9;
+
+
+  
   }
   
   .species-list li p {
     margin: 5px 0;
+    margin-right: 5rem;
+    background: #354064;
+  }
+  .menu{
+  display: flex;
+  border-radius: 6px;
+  background: rgba(249, 250, 253, 0.20);
   }
   
-  /* Optional: Add hover effect for each species */
-  .species-list li:hover {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-    background-color: #f1f1f1;
+  
+  
+  .speciest-img {
+    border-radius: 8px;
+    width: 100%;
+    height: 10rem;
   }
   
+  .flex-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+  }
+  
+  
+  
+  .btn{
+    display: inline-flex;
+    height: 32px;
+    align-items: center;
+    border-radius: 4px 0px 0px 4px;
+    border: 1px solid var(--grey-stroke, #DEDEDE);
+    background: var(--grey-3, #F1F1F5);
+  
+    
+  }
+  button{
+    background-color: white;
+  }
+  
+    
+  .film-reel{
+    display: flex;
+    padding: 12px 12px 12px 16px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    gap: 15px;
+    align-self: stretch;
+    background: rgba(249, 250, 253, 0.20);
+    color: white;
+    border-radius: 0.5rem;
+    }
+    
+    .film-reel img {
+      background: #354064;
+    }
+
+
+    
+
+  
+/* Responsive media queries */
+
+/* For devices with a maximum width of 768px (e.g., smartphones) */
+@media (max-width: 768px) {
+  .species-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .species-img {
+    height: 8rem;
+  }
+
+  .flex-item {
+    flex-direction: column; /* Change to a column layout for better alignment on smaller devices */
+    gap: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .species-list {
+    grid-template-columns: repeat(1, 1fr);
+    height: auto;
+  }
+}

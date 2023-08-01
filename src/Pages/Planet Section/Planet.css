@@ -1,34 +1,110 @@
-/* src/components/Planets.css */
 .planet-container {
-    padding: 20px;
+  gap: 0.75rem;
+  width: 1200px;
+  padding-right: 3rem;
   }
   
-  .planet-container h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+   h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.225rem;
+    color: white;
   }
   
   .planet-list {
     list-style: none;
-    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+  height: 290px;
+  align-self: stretch;
   }
   
+  
   .planet-list li {
-    border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #f9f9f9;
+    background-color: #dedede;
+
+  
   }
   
   .planet-list li p {
     margin: 5px 0;
+    margin-right: 5rem;
+  }
+  .menu{
+  display: flex;
+  border-radius: 6px;
+  background: rgba(249, 250, 253, 0.20);
   }
   
-  /* Optional: Add hover effect for each planet */
-  .planet-list li:hover {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-    background-color: #f1f1f1;
+  
+  
+  .planet-img {
+    border-radius: 8px;
+    width: 100%;
+    height: 10rem;
   }
   
+  .flex-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+  }
+  
+  button{
+    background-color: white;
+  }
+  
+    
+  .film-reel{
+    display: flex;
+    padding: 12px 12px 12px 16px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    gap: 15px;
+    align-self: stretch;
+    background: rgba(249, 250, 253, 0.20);
+    color: white;
+    border-radius: 0.5rem;
+    }
+    
+    .film-reel img {
+      background-color:  #344064;;
+    }
+
+
+
+    /* Responsive media queries */
+
+/* For devices with a maximum width of 768px (e.g., smartphones) */
+@media (max-width: 768px) {
+  .planet-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .planet-img {
+    height: 8rem;
+  }
+  
+  
+  .planet-container {
+    padding: 1rem;
+  }
+  
+  .planet-list li {
+    margin: 5px; 
+  }
+  
+  .flex-item {
+    flex-direction: column; 
+    gap: 1rem;
+  }
+  
+  .film-reel {
+    flex-wrap: wrap;
+  }
+}

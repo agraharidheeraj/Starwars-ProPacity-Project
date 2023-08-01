@@ -5,7 +5,9 @@ import {Link} from "react-router-dom"
 import Folder from '../assest/FolderSimple.png';
 import right  from '../assest/CaretRight.png';
 
+
 const Banner = () => {
+
   return (
     <div className='layout'>
         
@@ -43,6 +45,8 @@ const Banner = () => {
           </li>
         
         </ul>
+        
+     
        
       </nav>
       

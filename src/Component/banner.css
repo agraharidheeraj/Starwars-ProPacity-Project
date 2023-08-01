@@ -32,6 +32,34 @@ li a{
 .right{
  padding-left: 4rem;
 }
+.navigation .hum-menu{
+    display: none;
+}
 
 
    
+  /* For medium-sized devices like tablets */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .navigation {
+      width: 150px;
+    }
+
+    .right {
+      padding-left: 3rem;
+    }
+  }
+  
+  /* For larger devices like desktops */
+  @media (min-width: 1025px) {
+    .navigation {
+      width: 223px;
+    }
+
+  }
+  @media  (max-width: 600px) {
+    .navigation {
+        width: 100px;
+      }
+    
+  }
+    

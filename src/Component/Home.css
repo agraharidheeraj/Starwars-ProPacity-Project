@@ -43,3 +43,24 @@
 .home-subtitle {
     background-color: white;
 }
+
+
+  
+  /* Responsive media queries */
+  
+  
+  @media (max-width: 768px) {
+    .home-content {
+      width: 100%; 
+      max-width: none; 
+      border-radius: 0; 
+    }
+  
+    .home-img {
+      height: auto; 
+    }
+  
+    .home-section {
+      padding: 3rem 1rem; 
+    }
+  }
