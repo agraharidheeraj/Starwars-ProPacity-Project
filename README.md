@@ -1,5 +1,5 @@
 Starwars Project - Propacity
-# My-Coffee-Website- Link-[https://starwars-pro-pacity-project.vercel.app/]
+# Starwars dashboard - Link-[https://starwars-pro-pacity-project.vercel.app/]
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
